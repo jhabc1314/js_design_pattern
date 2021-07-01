@@ -1,5 +1,16 @@
 import { Builder, BuilderX, BuilderY } from './Builder'
 import { Director, DirectorA, DirectorB } from './Director'
+/**
+ * 参考：https://zhuanlan.zhihu.com/p/366623868
+ * 
+ * 优点：
+    可以分步创建对象，暂缓创建步骤或递归运行创建步骤。 
+    生成不同形式的产品时，可以复用相同的制造代码。
+    单一职责原则。可以将复杂构造代码从产品的业务逻辑中分离出来。
+ * 缺点：
+    由于该模式需要新增多个类，因此代码整体复杂程度会有所增加。
+ *
+ */
 
 const readline = require('readline').createInterface({
   input: process.stdin,
