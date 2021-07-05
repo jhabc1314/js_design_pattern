@@ -1,5 +1,5 @@
 {
-    "name": "javascript-design-pattern",
+    "name": "javascript-design-patterns",
     "author": "jackdou",
     "dependencies": {
         "@types/node": "^15.12.5"
