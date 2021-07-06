@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Bridge_1 = require("./Bridge");
+var implementA = new Bridge_1.ImplementA();
+var implementB = new Bridge_1.ImplementB();
+var action = new Bridge_1.ActionA(implementA);
+action.action1();
+action.action2();
+action = new Bridge_1.ActionB(implementB);
+action.action1();
+action.action2();
